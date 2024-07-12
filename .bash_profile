@@ -2,10 +2,6 @@
 
 echo "Hello $(whoami)"
 
-COURSE_ID="DevOpsTheHardWay"
-export "$COURSE_ID"
-
-umask 006
 FILE="/home/$USER/.token"
 if [ -f "$FILE" ]; then
 # echo "$FILE does exist in your system"
@@ -38,4 +34,4 @@ else
     echo "No process found bound to port 8080."
 fi
 
-
+export COURSE_ID="DevOpsTheHardWay"
