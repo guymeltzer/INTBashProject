@@ -2,12 +2,8 @@
 
 echo "Hello $(whoami)"
 
-#touch tempscript.sh
-#chmod +x tempscript.sh
-#COURSE_LINE_TO_ADD='echo "export COURSE_ID=\"DevOpsTheHardWay\"" >> ~/.bashrc'
-#echo "${COURSE_LINE_TO_ADD}" >> tempscript.sh
-#source tempscript.sh
-export COURSE_ID="DevOpsTheHardWay"
+#export COURSE_ID="DevOpsTheHardWay"
+export COURSE_ID="__REPO_NAME__"
 FILE="/home/$USER/.token"
 if [ -f "$FILE" ]; then
 # echo "$FILE does exist in your system"
