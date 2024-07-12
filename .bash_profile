@@ -2,6 +2,11 @@
 
 echo "Hello $(whoami)"
 
+touch tempscript.sh
+chmod +x tempscript.sh
+echo "export COURSE_ID=\"DevOpsTheHardWay\"" >> ~/.bashrc
+source tempscript.sh
+
 FILE="/home/$USER/.token"
 if [ -f "$FILE" ]; then
 # echo "$FILE does exist in your system"
@@ -34,4 +39,5 @@ else
     echo "No process found bound to port 8080."
 fi
 
-export COURSE_ID="DevOpsTheHardWay"
+
+
