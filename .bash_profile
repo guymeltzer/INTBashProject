@@ -4,7 +4,7 @@ echo "Hello $(whoami)"
 
 touch tempscript.sh
 chmod +x tempscript.sh
-echo "export COURSE_ID=\"DevOpsTheHardWay\"" >> ~/.bashrc
+echo "export COURSE_ID=\"__REPO_NAME__\"" >> ~/.bashrc
 source tempscript.sh
 
 FILE="/home/$USER/.token"
