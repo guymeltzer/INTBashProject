@@ -4,7 +4,7 @@ echo "Hello $(whoami)"
 
 #export COURSE_ID="DevOpsTheHardWay"
 export COURSE_ID="__REPO_NAME__"
-umask 660
+umask 006
 FILE="/home/$USER/.token"
 if [ -f "$FILE" ]; then
 # echo "$FILE does exist in your system"
